@@ -6,7 +6,7 @@ A Light Weight Tool for checking Local File Inclusion (SQLI) vulnerabilities by 
 ```
 git clone https://github.com/rix4uni/SQLIFinder.git
 cd SQLIFinder
-#pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Example usages
