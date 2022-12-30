@@ -9,7 +9,7 @@ import regex
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("--threads", type=int, default=8, help="number of threads to use")
+parser.add_argument("--threads", "-t", type=int, default=8, help="number of threads to use")
 args = parser.parse_args()
 
 payloads = ["'", '"', '+', '-', '*', '[]', "')"]
