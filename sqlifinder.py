@@ -45,11 +45,6 @@ def check_url(url, payload):
 
     response = requests.get(decoded_url, headers=headers)
 
-    # if 'Warning' in response.text:
-    #     print(f"\033[1;31f"\033[1;31mVULNERABLE: {decoded_url}\033[0;0m")
-    # else:
-    #     print(f"\033[1;32mNOTf"\033[1;31mVULNERABLE: {decoded_url}\033[0;0m")
-
     # Use the | character to search for multiple regular expressions
     MySQL_regex = "Warning.*?\\Wmysqli?_|SQL syntax.*?MySQL|MySQLSyntaxErrorException|SQL syntax.*?MySQL|Warning.*?\\Wmysqli?_|MySQLSyntaxErrorException|valid MySQL result|check the manual that (corresponds to|fits) your MySQL server version|Unknown column '[^ ]+' in 'field list'|MySqlClient\\.|com\\.mysql\\.jdbc|Zend_Db_(Adapter|Statement)_Mysqli_Exception|Pdo[./_\\\\]Mysql|MySqlException|SQLSTATE\\[\\d+\\]: Syntax error or access violation"
     MariaDB_regex = "check the manual that (corresponds to|fits) your MariaDB server version"
