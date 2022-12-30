@@ -15,7 +15,7 @@ Note: must use `uro`
 
 Single URL:
 ```
-echo "http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg" | python3 sqlifinder.py
+echo "http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg" | python3 sqlifinder.py -t 50
 ```
 
 Multiple URLs:
