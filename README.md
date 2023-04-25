@@ -20,6 +20,7 @@ echo "http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg" | python3 
 
 Multiple URLs:
 ```
+echo "http://testphp.vulnweb.com" | waybackurls | gf sqli | uro | anew sqli-urls.txt
 cat sqli-urls.txt | python3 sqlifinder.py
 ```
 
@@ -41,9 +42,4 @@ VULNERABLE [MySQL]: http://testphp.vulnweb.com:80/listproducts.php?cat='
 VULNERABLE [MySQL]: http://testphp.vulnweb.com/artists.php?artist='
 VULNERABLE [MySQL]: http://testphp.vulnweb.com/listproducts.php?id='
 VULNERABLE [MySQL]: http://testphp.vulnweb.com/Mod_Rewrite_Shop/details.php?id="
-```
-
-## Chaining With Other Tools
-```
-echo "http://testphp.vulnweb.com" | waybackurls | gf sqli | uro | anew | python3 sqlifinder.py
 ```
