@@ -1,6 +1,6 @@
 # SQLIFinder
 
-A Light Weight Tool for checking Local File Inclusion (SQLI) vulnerabilities by replacing sqli payloads in the parameters values and checking 'sql error' in the response.
+A Light Weight Tool for checking SQL Injection vulnerabilities by replacing sqli payloads in the parameters values and checking 'sql error' in the response.
 
 ## Installation
 ```
