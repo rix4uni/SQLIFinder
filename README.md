@@ -46,5 +46,4 @@ VULNERABLE [MySQL]: http://testphp.vulnweb.com/Mod_Rewrite_Shop/details.php?id="
 ## Chaining With Other Tools
 ```
 echo "http://testphp.vulnweb.com" | waybackurls | gf sqli | uro | anew | python3 sqlifinder.py
-echo "http://testphp.vulnweb.com" | waybackurls | gf sqli | uro | anew sqli-urls.txt # use this output in Multiple URLs
 ```
